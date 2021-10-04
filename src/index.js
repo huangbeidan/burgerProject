@@ -21,6 +21,8 @@ const rootReducer = combineReducers({
     auth: authReducer
 });
 
+console.log("test");
+
 const store = createStore(rootReducer, composeEnhancers(
     applyMiddleware(thunk)
 ));
